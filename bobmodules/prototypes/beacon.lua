@@ -12,8 +12,7 @@ data:extend({
     subgroup = "module-beacon",
     order = "a[beacon]-2",
     place_result = "beacon-2",
-    stack_size = 20,
-    beacon_counter = "global",
+    stack_size = 10,
   },
 
   {
@@ -25,8 +24,7 @@ data:extend({
     subgroup = "module-beacon",
     order = "a[beacon]-3",
     place_result = "beacon-3",
-    stack_size = 20,
-    beacon_counter = "global",
+    stack_size = 10,
   },
 
   util.merge({
@@ -37,7 +35,7 @@ data:extend({
       max_health = 300,
       next_upgrade = "beacon-3",
       supply_area_distance = 6,
-      distribution_effectivity = 2.25,
+      distribution_effectivity = 0.75,
       module_specification = { module_slots = 4 },
     },
   }),
@@ -49,7 +47,7 @@ data:extend({
       minable = { result = "beacon-3" },
       max_health = 400,
       supply_area_distance = 9,
-      distribution_effectivity = 3,
+      distribution_effectivity = 1,
       module_specification = { module_slots = 6 },
     },
   }),
